@@ -1,8 +1,8 @@
 export const repositoryFeedConfig = {
-  githubUser: "calileus",
-  organizations: ["CalileusLab", "ObsidianHonorCoders"],
-  excludedNames: [".github", "community", "organization", "org-management"],
+  githubUser: "Fernando-JAL",
+  organizations: ["ObsidianHonorCoders"],
+  excludedNames: [".github", "community", "organization", "org-management", "Fernando-JAL.github.io"],
   excludedTopics: ["meta", "configuration", "organization-management", "dotfiles"],
-  preferredLanguages: ["C++", "C", "CMake"],
+  preferredLanguages: ["Python", "C++", "C", "Jupyter Notebook", "CMake"],
   limit: 6,
 };

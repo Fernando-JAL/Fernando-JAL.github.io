@@ -1,15 +1,15 @@
 {
-    "name": "Calileus - Software Architect & Lead Developer",
-    "short_name": "Calileus",
-    "description": "Software Architect & Lead Developer specializing in Modern C++, Linux, Distributed Systems, CI/CD, and Software Quality.",
-    "start_url": "/Calileus/",
+    "name": "Fernando Alcantara Lopez | Software Engineer & Data Engineer",
+    "short_name": "Fernando JAL",
+    "description": "Software engineer focused on scientific computing, machine learning, Python, C++, software testing, and ADAS validation.",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#022c22",
     "theme_color": "#064e3b",
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "/Calileus/favicon.svg",
+            "src": "/favicon.svg",
             "sizes": "any",
             "type": "image/svg+xml",
             "purpose": "any maskable"

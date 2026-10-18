@@ -1,5 +1,7 @@
-# Calileus landing page
+# Fernando Alcantara Lopez landing page
 
-This repository contains the static landing page for Calileus.
+This repository contains the personal portfolio landing page for Fernando Alcantara Lopez.
 
-The page displays public GitHub repositories for the configured GitHub account and organizations, with a green-themed layout and automatic updates when the page is loaded.
+The site showcases software engineering, machine learning, scientific computing, validation experience, and public repositories from the configured GitHub profile and affiliated organizations.
+
+The Scientific Products page collects selected journal articles, theses, and a conference paper, with links to DOI records and institutional repositories.

@@ -1,95 +1,74 @@
 export const metrics = [
-  { value: "10+", description: "years of C++ engineering experience" },
-  { value: "14", description: "engineers led on automotive radar team" },
-  { value: "5+", description: "major repos architected & refactored" },
-  { value: "20+", description: "private projects built & shipped" },
+  { value: "10+", description: "years of scientific software & research" },
+  { value: "4+", description: "years in software testing & ADAS validation" },
+  { value: "5+", description: "years in software engineering, ML & data" },
+  { value: "12+", description: "technical projects and research workflows" },
 ];
 
 export const projects = [
   {
-    name: "ohc-template-repo",
-    type: "C++ template",
-    url: "https://github.com/ObsidianHonorCoders/ohc-template-repo",
-    image: "/jaguar_profile.jpg",
-    imageAlt: "Obsidian Honor Coders jaguar and Charmander programming together",
-    summary: "A starter C++ repository with CMake, GoogleTest, Dev Containers, and GitHub Actions.",
-    focus: ["CMake", "GoogleTest", "GitHub Actions", "Cross-platform CI/CD"],
+    name: "ADAS Perception",
+    type: "Machine Learning / Computer Vision",
+    url: "https://github.com/ObsidianHonorCoders/adas-ml-detection",
+    image: "/adas-ml-detection.png",
+    imageAlt: "ADAS perception project concept visual",
+    summary: "Experimental ADAS object-detection project using YOLO11n and automotive datasets such as BDD100K, focused on reproducible ML experiments and evaluation workflows.",
+    focus: ["Python", "YOLO11n", "Computer Vision", "BDD100K", "Model Evaluation", "MLOps"],
   },
   {
-    name: "inheritance-chess",
-    type: "C++20 chess engine",
-    url: "https://github.com/ObsidianHonorCoders/inheritance-chess",
-    image: "/inheritance-chess-icon.png",
-    imageAlt: "Inheritance Chess logo - a chess piece with inheritance arrows",
-    summary: "A chess engine built to explore C++20 design, events, and testing.",
-    focus: ["C++20", "Polymorphism", "Event-driven design", "Testing"],
+    name: "SimuCaS-V1",
+    type: "Desktop Application / Scientific Computing",
+    url: "https://github.com/Fernando-JAL/SimuCaS-V1",
+    image: "/simucas-v1.png",
+    imageAlt: "Robotic manipulator simulation software visual",
+    summary: "Windows application for building and simulating serial robotic manipulators in 3D, covering kinematics, transformations, and numerical simulation workflows.",
+    focus: ["C++", "Robotics", "Numerical Methods", "Kinematics", "3D Visualization", "OpenGL"],
   },
 ];
 
-export const testimonials = [
-  {
-    quote: "He brings strong technical expertise and is genuinely supportive to work with. He grasps context very quickly and is always open to discussion.",
-    name: "Sachin Joshi",
-    title: "Radar SW Chief Architect",
-    location: "AUMOVIO, Bengaluru",
-  },
-  {
-    quote: "He orchestrates and maintains cohesion among the team tasks, allowing all efforts to push in the same direction towards the team goal.",
-    name: "Mario Pantoja",
-    title: "R&D Algorithms Engineer",
-    location: "AUMOVIO, Querétaro",
-  },
-  {
-    quote: "Great knowledge about C++ programming. Excellent attitude to support the team. You bring dedicated energy and consistently contribute in meaningful ways that elevate everyone around you.",
-    name: "Elí Ramírez",
-    title: "R&D Algorithms Engineer",
-    location: "AUMOVIO, Querétaro",
-  },
-];
+export const testimonials = [];
 
 export const experience = [
   {
-    period: "Apr 2022 - Present",
-    role: "Software Architect & Lead Developer",
-    company: "AUMOVIO / Continental Autonomous Mobility",
+    period: "May 2022 - Present",
+    role: "Software Test Engineer / Functional Test Owner",
+    company: "Aumovio",
     current: true,
     highlights: [
-      "Led a 14-person team building automotive radar software from the first design to production.",
-      "Designed the pipeline that processes radar detections, tracks objects, and sends results to customers.",
-      "Added more than 10 GitHub Actions workflows across 8 components, cutting review work by 60%.",
-      "Automated C++ checks and formatting, raising first-pass test success from 20% to nearly 100%.",
-      "Set up the Windows and Linux build, release, and versioning process.",
-      "Welcomed 17 contributors and mentored 3 junior developers.",
+      "Developed Python tools for ADAS validation and false-positive/negative analysis.",
+      "Automated image analysis and labeling workflows, reducing processing effort by up to 95%.",
+      "Built testing workflows for radar- and camera-based driving functions to support validation and debugging.",
     ],
   },
   {
-    period: "2015 - 2022",
-    role: "University Professor | Academic Manager | Logic Olympiad Facilitator",
-    company: "Polytechnic University of Querétaro / Autonomous University of Querétaro",
+    period: "2016 - 2018",
+    role: "Scientific Software Developer / Researcher",
+    company: "UNAM, Centro de Geociencias",
     current: false,
     highlights: [
-      "Taught C/C++, mathematics, and formal logic to more than 100 students.",
-      "Built software for automatic grading and contest management.",
-      "Managed exams and content for the Mexican Logic Olympiad.",
+      "Developed C/C++ computational models for fractured petroleum reservoirs.",
+      "Implemented numerical methods using PDEs and fractional calculus.",
+      "Built real-time graphical tools for model configuration and simulation.",
     ],
   },
   {
-    period: "2014 - 2016",
-    role: "Software Development Consultant",
-    company: "REXAM | IMPULSE TELECOM | Sancorzep Group | REGULES",
+    period: "2012 - 2014",
+    role: "Scientific Software Researcher",
+    company: "UNAM, Centro de Geociencias",
     current: false,
     highlights: [
-      "Built inventory and operations software with SQL, C++, and WinAPI.",
-      "Handled projects from requirements to deployment, training, and maintenance.",
+      "Contributed to a CONACYT-SENER-funded petroleum reservoir modeling project.",
+      "Developed mathematical models for triple-porosity and permeability systems.",
+      "Applied numerical simulation and inverse modeling to reservoir data.",
     ],
   },
 ];
 
 export const credentials = [
-  { year: "2026", name: "Google AI Essentials", issuer: "Google", description: "Responsible AI foundations and AI-assisted work practices." },
-  { year: "2025", name: "Secure Software Design Specialization", issuer: "University of Colorado", description: "Secure systems design, threat modeling, and cryptographic fundamentals." },
-  { year: "2024", name: "EF SET English Certificate", issuer: "EF Education First", description: "C1 Advanced proficiency for international technical collaboration." },
-  { year: "2023", name: "Parallel & GPU Programming (CUDA)", issuer: "Johns Hopkins University", description: "High-performance computing concepts for signal processing and sensor fusion." },
+  { year: "2026", name: "Databases and SQL for Data Science with Python", issuer: "IBM / Coursera", description: "SQL queries, relational databases, and Python-based data analysis." },
+  { year: "2023", name: "Data Visualization with Python", issuer: "Coursera", description: "Data visualization and communicating insights using Python." },
+  { year: "2022", name: "Curso completo de Machine Learning: Data Science en Python", issuer: "Udemy", description: "Machine learning fundamentals and practical data science with Python." },
+  { year: "2022", name: "Getting Started with Git and GitHub", issuer: "Coursera", description: "Version control, branching, merging, and collaborative software development." },
 ];
 
 export const featuredRepositories = projects.map((project) => ({

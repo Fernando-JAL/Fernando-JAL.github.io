@@ -8,6 +8,7 @@ const { currentPath } = Astro.props;
 const navigation = [
   { href: "/experience", label: "Experience" },
   { href: "/projects", label: "Projects" },
+  { href: "/scientific-products", label: "Research" },
   { href: "/architecture", label: "How I Work" },
   { href: "/credentials", label: "Education" },
 ];
@@ -17,19 +18,19 @@ const isActive = (href: string) => currentPath === href;
 
 <header class="site-header">
   <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
-    <a href="/" class="brand-mark" aria-label="Calileus home">
+    <a href="/" class="brand-mark" aria-label="Fernando JAL home">
       <span class="brand-mark__dot"></span>
-      <span>Calileus<span class="text-brand-400">.</span></span>
+      <span>Fernando <span class="text-brand-400">JAL</span></span>
     </a>
 
     <div class="flex items-center gap-4">
-      <nav class="hidden items-center gap-7 text-sm md:flex" aria-label="Main navigation">
+      <nav class="hidden items-center gap-4 text-sm lg:gap-7 md:flex" aria-label="Main navigation">
         {navigation.map((item) => (
           <a href={item.href} class:list={["nav-link", { "nav-link--active": isActive(item.href) }]} aria-current={isActive(item.href) ? "page" : undefined}>
             {item.label}
           </a>
         ))}
-        <a href="https://www.linkedin.com/in/calileus" target="_blank" rel="noopener noreferrer" class="nav-cta">Contact <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/fernando-javier-alcantara-lopez/" target="_blank" rel="noopener noreferrer" class="nav-cta">Contact <span aria-hidden="true">↗</span></a>
       </nav>
 
       <details class="relative md:hidden">
@@ -38,7 +39,7 @@ const isActive = (href: string) => currentPath === href;
           {navigation.map((item) => (
             <a href={item.href} class:list={["nav-link", "px-3 py-2", { "nav-link--active": isActive(item.href) }]} aria-current={isActive(item.href) ? "page" : undefined}>{item.label}</a>
           ))}
-          <a href="https://www.linkedin.com/in/calileus" target="_blank" rel="noopener noreferrer" class="nav-link px-3 py-2">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/fernando-javier-alcantara-lopez/" target="_blank" rel="noopener noreferrer" class="nav-link px-3 py-2">LinkedIn <span aria-hidden="true">↗</span></a>
         </nav>
       </details>
 

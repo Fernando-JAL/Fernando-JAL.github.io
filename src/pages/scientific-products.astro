@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { googleScholarUrl, scientificProducts } from "../data/scientific-products";
+---
+
+<Layout
+  title="Scientific Products | Fernando Alcantara Lopez"
+  description="Journal articles, theses, and conference contributions by Fernando Alcantara Lopez."
+  path="/scientific-products"
+>
+  <main>
+    <section class="page-intro mx-auto max-w-6xl px-6 py-24" aria-labelledby="scientific-products-heading">
+      <p class="eyebrow">SCIENTIFIC PRODUCTS</p>
+      <h1 id="scientific-products-heading">Research in mathematical modeling and applied computing.</h1>
+      <p>Selected journal articles, theses, and conference work in fractional calculus, reservoir modeling, growth models, and water infiltration.</p>
+      <a class="project-link" href={googleScholarUrl} target="_blank" rel="noopener noreferrer">
+        View Google Scholar profile <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <section class="section-band mx-auto max-w-6xl px-6" aria-labelledby="publications-heading">
+      <div class="section-intro">
+        <p class="eyebrow">01 / PUBLICATIONS</p>
+        <h2 id="publications-heading">Articles, theses, and conference paper.</h2>
+        <p>Publication records link to the publisher DOI or the institutional repository.</p>
+      </div>
+      <div class="scientific-products-list">
+        {scientificProducts.map((product) => (
+          <article class="scientific-product-card">
+            <div class="scientific-product-card__meta">
+              <span>{product.category}</span>
+              <span>{product.year}</span>
+            </div>
+            <h3>{product.title}</h3>
+            <p class="scientific-product-card__publication">{product.publication}</p>
+            <p>{product.summary}</p>
+            <div class="scientific-product-card__footer">
+              <span>{product.contribution}</span>
+              <a href={product.url} target="_blank" rel="noopener noreferrer">
+                {product.linkLabel} <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </main>
+</Layout>

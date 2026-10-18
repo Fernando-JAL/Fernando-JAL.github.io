@@ -439,7 +439,44 @@
     }
 
     .nav-grid {
-        @apply grid gap-4 md:grid-cols-4;
+        @apply grid gap-4 md:grid-cols-2 xl:grid-cols-5;
+    }
+
+    .scientific-products-list {
+        @apply grid gap-4;
+    }
+
+    .scientific-product-card {
+        @apply rounded-2xl border border-neutral-800 bg-neutral-900/60 p-6 transition-colors duration-300 hover:border-emerald-500/40 hover:bg-neutral-900 md:p-8;
+    }
+
+    .scientific-product-card__meta,
+    .scientific-product-card__footer {
+        @apply flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-wider;
+    }
+
+    .scientific-product-card__meta {
+        @apply text-emerald-400;
+    }
+
+    .scientific-product-card h3 {
+        @apply mt-5 text-lg font-semibold leading-snug text-white md:text-xl;
+    }
+
+    .scientific-product-card>p {
+        @apply mt-3 text-sm leading-relaxed text-neutral-400;
+    }
+
+    .scientific-product-card .scientific-product-card__publication {
+        @apply text-emerald-200/80;
+    }
+
+    .scientific-product-card__footer {
+        @apply mt-6 border-t border-neutral-800 pt-4 text-neutral-500;
+    }
+
+    .scientific-product-card__footer a {
+        @apply font-semibold text-emerald-400 hover:text-emerald-300;
     }
 
     .nav-card {

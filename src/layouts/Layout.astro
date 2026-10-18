@@ -11,10 +11,10 @@ interface Props {
 
 const {
   title,
-  description = "Calileus - C++ software architect and developer working on automotive systems, open-source tools, and technical teams.",
+  description = "Fernando Alcantara Lopez - software engineer focused on machine learning, ADAS validation, scientific computing, and data-driven engineering solutions.",
   path = Astro.url.pathname,
 } = Astro.props;
-const siteUrl = "https://calileus.github.io";
+const siteUrl = "https://Fernando-JAL.github.io";
 const canonicalUrl = new URL(path, siteUrl).href;
 ---
 
@@ -27,7 +27,7 @@ const canonicalUrl = new URL(path, siteUrl).href;
     <meta name="theme-color" content="#064e3b" />
     <script is:inline>
       (() => {
-        const storageKey = "calileus-theme";
+        const storageKey = "fernando-jal-theme";
         const savedTheme = localStorage.getItem(storageKey);
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const theme = savedTheme === "light" || savedTheme === "dark"
@@ -102,7 +102,7 @@ const canonicalUrl = new URL(path, siteUrl).href;
 
     <script is:inline>
       (() => {
-        const storageKey = "calileus-theme";
+        const storageKey = "fernando-jal-theme";
 
         const applyTheme = (theme) => {
           document.documentElement.dataset.theme = theme;
