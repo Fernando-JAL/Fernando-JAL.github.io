@@ -24,7 +24,7 @@ const canonicalUrl = new URL(path, siteUrl).href;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#064e3b" />
+    <meta name="theme-color" content="#0b1220" />
     <script is:inline>
       (() => {
         const storageKey = "fernando-jal-theme";
@@ -39,7 +39,7 @@ const canonicalUrl = new URL(path, siteUrl).href;
 
         const themeMeta = document.querySelector('meta[name="theme-color"]');
         if (themeMeta) {
-          themeMeta.setAttribute("content", theme === "dark" ? "#064e3b" : "#34d399");
+          themeMeta.setAttribute("content", theme === "dark" ? "#0b1220" : "#f8fafc");
         }
       })();
     </script>
@@ -110,7 +110,7 @@ const canonicalUrl = new URL(path, siteUrl).href;
 
           const themeMeta = document.querySelector('meta[name="theme-color"]');
           if (themeMeta) {
-            themeMeta.setAttribute("content", theme === "dark" ? "#064e3b" : "#34d399");
+            themeMeta.setAttribute("content", theme === "dark" ? "#0b1220" : "#f8fafc");
           }
 
           document.querySelectorAll("[data-theme-label]").forEach((label) => {
